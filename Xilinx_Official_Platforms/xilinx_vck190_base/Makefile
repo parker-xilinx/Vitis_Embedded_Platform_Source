@@ -42,7 +42,7 @@ xsa:
 linux: xsa
 	$(MAKE) -C sw all
 
-petalinux_sysroot:
+petalinux_sysroot: linux
 	$(MAKE) -C sw/build sysroot
 	@if [ -d $(SYSROOT) ]; then cp -rf $(SYSROOT) $(OUTPUT_PATH)/; fi
 
