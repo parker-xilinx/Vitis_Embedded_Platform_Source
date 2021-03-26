@@ -59,5 +59,5 @@ clean:
 	$(MAKE) -C sw clean
 	${RM} -r $(OUTPUT_PATH)
 
-all: xsa linux platform pre-built
+all: xsa linux platform petalinux_sysroot
 	@echo 'Platform build complete'
