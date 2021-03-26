@@ -44,9 +44,9 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 # <./xilinx_vck190_base/xilinx_vck190_base.xpr> in the current working folder.
 set list_projs [get_projects -quiet]
 if { $list_projs eq "" } {
-    set_param board.repoPaths ./../data/board_files/
-    create_project xilinx_vck190_base xilinx_vck190_base -part xcvc1902-vsva2197-1LHP-i-L
-    set_property BOARD_PART xilinx.com:vck190:part0:2.0 [current_project]
+	set_param board.repoPaths /home/parkerh/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store   
+	create_project xilinx_vck190_base xilinx_vck190_base -part xcvc1902-vsva2197-2MP-e-S-es1
+	set_property BOARD_PART xilinx.com:vck190_es:part0:1.1 [current_project]
 }
 
 

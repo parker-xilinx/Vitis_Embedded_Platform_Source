@@ -13,4 +13,4 @@ export XSCT_SCRIPTS     = $(CWD)/../common/xsct_scripts
 export BOOT_FILES       = $(BOOT_FILES_PATH)
 export PRE_SYNTH        ?= FALSE
 
-export COMMON_RFS_KRNL_SYSROOT ?= TRUE
+export COMMON_RFS_KRNL_SYSROOT ?= FALSE
